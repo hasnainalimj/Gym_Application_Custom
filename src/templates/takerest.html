@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TAKING REST</title>
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<body background="../assets/takerest.jpg">
+
+	<div class="exercise-container">
+		<div class="rest-title">
+			<h1 class="title2">TAKE REST AND DRINK SOME WATER</h1>
+		</div>
+		<div class="rest-container">
+			<h1 id="rest"></h1>
+		</div>
+		<div class="btn-container" id="container">
+			<!--<input type="button" id="btnHome" class="btnHome" value="BACK TO HOME">-->
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		var counter = +prompt("Enter Time for Rest in Seconds.....")+1;
+		if(isNaN(counter)){
+			alert("Please Enter Only Numeric Values.....");
+			counter = 11;
+		}
+			
+		var view = document.getElementById('rest');
+		var rest = setInterval(function(){
+		counter--;
+		view.innerHTML = counter;
+			if(counter == 0){
+				view.innerHTML = "COOL!";
+				clearInterval(rest);
+				var container = document.getElementById('container');
+				var button = document.createElement('button');
+				button.innerHTML = "BACK TO HOME";
+				button.setAttribute('class','btnHome');
+				button.setAttribute('onclick','backToHome()')
+				container.appendChild(button);
+				}
+		},1000);	
+		
+		function backToHome(){
+			window.location.href = "home.html";
+		}
+
+		history.pushState(null, null, location.href);
+    	window.onpopstate = function () {
+        history.go(1);
+    	};
+	</script>
+</body>
+</html>

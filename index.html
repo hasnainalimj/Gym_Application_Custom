@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome-Gym App</title>
+	<link rel="stylesheet" type="text/css" href="src/css/styles.css">
+</head>
+<body background="src/assets/1.jpg">
+
+	<div class="container">
+		<h1 class="heading">WELCOME TO GYM APP</h1>
+		<center>
+			<button class="mainPageButtons" onclick="goToLogin()">LOGIN</button>
+			<button class="mainPageButtons" onclick="goToRegister()">REGISTER</button>	
+		</center>
+		
+	</div>
+
+	<script type="text/javascript" src="src/js/script.js">
+		history.pushState(null, null, location.href);
+    	window.onpopstate = function () {
+        history.go(1);
+    	};
+	</script>
+
+</body>
+</html>

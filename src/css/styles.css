@@ -1,0 +1,463 @@
+body{
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 50%;
+}
+
+.heading{
+	color: #FFF;
+	text-align: center;
+	font-size: 50px;
+	text-decoration: underline;
+}
+
+.mainPageButtons{
+	width: 150px;
+	height: 50px;
+	margin: 5px;
+	border-radius: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	background-color: cyan;
+	transition: background-color 2s;
+}
+
+.mainPageButtons:hover{
+	background-color: grey;
+}
+
+.regsiter-container{
+	width: 50%;
+	height: 500px;
+	background-color: #000;
+	opacity: 0.7;
+	border-radius: 30px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: 0 auto;
+	margin-top: 8%;
+}
+
+.headingTwo{
+	color: #FFF;
+	opacity: 1;
+	font-size: 40px;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.texts{
+	color: #FFF;
+	font-size: 18px;
+	font-family: sans-serif;
+	font-weight: normal;
+	text-align: right;
+}
+
+.fields{
+	width: 200px;
+	height: 25px;
+	border-radius: 10px;
+	color: blue;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.errors{
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.radios{
+	width: 18px;
+	height: 18px;
+	margin-left: 15px;
+}
+
+.genders{
+	color: #FFF;
+	font-size: 18px;
+	font-family: sans-serif;
+	font-weight: normal;
+	text-align: right;
+}
+
+.btnSubmit{
+	width: 150px;
+	height: 30px;
+	margin-top: 5px;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 16px;
+	cursor: pointer;
+	background-color: grey;
+	transition: background-color 2s;
+}
+
+.btnSubmit:hover{
+	background-color: yellow;
+}
+
+.login-container{
+	width: 50%;
+	height: 350px;
+	background-color: #000;
+	opacity: 0.7;
+	border-radius: 30px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: 0 auto;
+	margin-top: 12%;
+}
+
+@keyframes example {
+    0%   {color:red;}
+    25%  {color:yellow;}
+    50%  {color:blue;}
+    75%  {color:green;}
+    100% {color:red;}
+}
+
+.headingThree{
+	color: #FFF;
+	text-align: center;
+	font-size: 50px;
+	text-decoration: underline;
+	animation: example 5s linear infinite alternate;
+}
+
+.headingFour{
+	color: #FFF;
+	text-align: center;
+	font-size: 40px;
+	margin-top: 30px;
+	text-decoration: underline;
+}
+
+.exercises{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-left: 150px;
+	margin-top: 50px;
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: bold;
+	transition: background-color 2s linear;
+	transition: color 2s linear;
+}
+
+.exercises:hover{
+    background-color: yellow;
+    color: blue;
+}
+
+.exercise-container{
+	width: 700px;
+	height: 500px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: 0 auto;
+	position: absolute;
+	margin-top: 50px;
+}
+
+.exercise-title{
+	width: inherit;
+	height: 80px;
+	background-color: #000;
+	border-radius: 25px;
+}
+
+.rest-title{
+	width: inherit;
+	height: 80px;
+	background-color: skyblue;
+	border-radius: 25px;
+}
+
+.title{
+	color: #FFF;
+	padding: 20px;
+	text-align: center;
+}
+
+.title2{
+	color: #000;
+	padding: 20px;
+	text-align: center;
+}
+
+.raps-container{
+	width: 250px;
+	height: 250px;
+	background-color: yellow;
+	margin: 0 auto;
+	margin-top: 50px;
+	border-radius: 50%;
+}
+
+.rest-container{
+	width: 250px;
+	height: 250px;
+	background-color: black;
+	margin: 0 auto;
+	margin-top: 50px;
+	border-radius: 50%;
+}
+
+#raps{
+	font-size: 70px;
+	text-align: center;
+	padding-top: 90px;
+}
+
+#rest{
+	font-size: 70px;
+	text-align: center;
+	padding-top: 90px;
+	color: yellow;
+}
+
+.btn-container{
+	width: 250px;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 45px; 
+}
+
+.btnTakeRest{
+	width: inherit;
+	height: inherit;
+	border-radius: 20px;
+	font-size: 20px;
+	border:none;
+	cursor: pointer;
+	font-weight:bold;
+	background-color: skyblue;
+	transition :background-color 3s linear;
+	transition :color 3s linear;
+}
+
+.btnTakeRest:hover{
+	background-color: #000;
+	color: skyblue;
+}
+
+.btnHome{
+	width: inherit;
+	height: inherit;
+	border-radius: 20px;
+	font-size: 20px;
+	border:none;
+	cursor: pointer;
+	font-weight:bold;
+	background-color: pink;
+	transition :background-color 3s linear;
+	transition :color 3s linear;
+}
+
+.btnHome:hover{
+	background-color: #000;
+	color: pink;
+}
+
+.footer{
+	text-align: center;
+	color: #FFF;
+	margin-top: 60px;
+	font-style: italic;
+}
+
+.theraps{
+	text-align: center;
+	color: #FFF;
+	font-family: monospace;
+}
+
+#rapitetions{
+	text-decoration: underline;
+	color: yellow;
+	font-style: italic;
+}
+
+.linking{
+	font-size: 20px;
+	float: right;
+	margin-top: 35px;
+	color: white;
+	margin-right: 15px;
+}
+
+.linking2{
+	font-size: 20px;
+	float: right;
+	margin-top: 10px;
+	color: white;
+	margin-right: 15px;
+}
+
+.logout{
+	float: right;
+	color: white;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+.addNewExercise{
+	width: 500px;
+	height: 50px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border-radius: 20px;
+	border:none;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 2s linear;
+	transition: color 2s linear;
+}
+
+.addNewExercise:hover{
+	background-color: yellow;
+	color: blue;
+}
+
+.addexercises-container{
+	width: 600px;
+	height: 600px;
+	margin: 0 auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-top: 60px;
+}
+
+.headingfive{
+	color: white;
+	text-decoration: underline;
+	text-align: center;
+}
+
+#txtexercise{
+	width: 500px;
+	height: 30px;
+	margin-top: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+.btnaddinselect{
+	width: 150px;
+	height: 30px;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 10px;
+	margin-left: 50px;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+.selectExercise{
+	width: 500px;
+	height: 35px;
+	margin-top: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+#txtexerciseraps{
+	width: 500px;
+	height: 30px;
+	margin-top: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+.addrest{
+	width: 100px;
+	height: 28px;
+	margin-left: 50px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.contentrest{
+	font-size: 22px;
+	color: #FFF;
+	font-weight: bold;
+	vertical-align: super;
+	margin-left: 5px;
+}
+
+#txtrests{
+	width: 500px;
+	height: 30px;
+	margin-top: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 10px;
+	margin-top: 20px;
+	display: none;
+}
+
+#checkedrestTwo{
+	display: none;
+}
+
+#labelTwo{
+	display: none;
+}
+
+.myexercise-container{
+	width: 600px;
+	height: 600px;
+	margin: 0 auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin-top: 70px;
+}
+
+#main-table{
+	color: #FFF;
+	text-align: center;
+	width: inherit;
+	border: none;
+}
+
+.new-buttons{
+	width: 200px;
+	height: 30px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-weight: bold;
+	margin-top: 20px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home-GYM APP</title>
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<body background="../assets/4.jpg">
+	<a class="logout" href="login.html">Logout</a>
+	<h1 class="headingThree">WELCOME TO ONLINE GYM APP</h1>
+	<h1 class="headingFour">Select Your Exercise</h1>
+	<center>
+		<button class="addNewExercise" onclick="goToAddExercises()">CLICK HERE TO ADD NEW EXERCISES</button>				
+	</center>
+
+	<button class="exercises" onclick="pushups()">PUSH-UPS</button>
+	<button class="exercises" onclick="pullups()">PULL-UPS</button>
+	<button class="exercises" onclick="chinups()">CHIN-UPS</button>
+	<button class="exercises" onclick="verticalPushups()">VERTICAL PUSH-UPS</button>
+	<button class="exercises" onclick="benchPressRod()">BENCH PRESS ROD</button>
+	<button class="exercises" onclick="benchPressDumble()">BENCH PRESS DUMBLE</button>
+	<button class="exercises" onclick="inclinePressRod()">INCLINE PRESS ROD</button>
+	<button class="exercises" onclick="inclinePressDumble()">INCLINE PRESS DUMBLE</button>
+	<button class="exercises" onclick="declinePressRod()">DECLINE PRESS ROD</button>
+	<button class="exercises" onclick="declinePressDumble()">DECLINE PRESS DUMBLE</button>
+	<button class="exercises" onclick="flying()">FLYING</button>
+	<button class="exercises" onclick="pullover()">PULL-OVER</button>
+	<button class="exercises" onclick="treadmill()">TREADMILL</button>
+	<button class="exercises" onclick="frontLatPullDown()">FRONT LAT-PULL DOWN</button>
+	<button class="exercises" onclick="backLatPullDown()">BACK LAT-PULL DOWN</button>
+	<button class="exercises" onclick="barbelRodNarrow()">BARBEL-ROD NARROW</button>
+	<button class="exercises" onclick="barbelRodWide()">BARBEL-ROD WIDE</button>
+	<button class="exercises" onclick="tbar()">T-BAR</button>
+	<button class="exercises" onclick="deadliftNarrow()">DEAD-LIFT NARROW</button>
+	<button class="exercises" onclick="deadliftWide()">DEAD-LIFT WIDE</button>
+	<button class="exercises" onclick="rollingRow()">ROLLING ROW</button>
+	<button class="exercises" onclick="triceptDumble()">TRI-CEPT DUMBLE</button>
+	<button class="exercises" onclick="triceptRod()">TRI-CEPT ROD</button>
+	<button class="exercises" onclick="triceptExtension()">TRI-CEPT EXTENSION</button>
+	<button class="exercises" onclick="biceptDumble()">BI-CEPT DUMBLE</button>
+	<button class="exercises" onclick="biceptRod()">BI-CEPT ROD</button>
+	<button class="exercises" onclick="pascaline()">PASCALINE</button>
+	<button class="exercises" onclick="biceptExtension()">BI-CEPT EXTENSION</button>
+	<button class="exercises" onclick="hammer()">HAMMER</button>
+	<button class="exercises" onclick="crunches()">CRUNCHES</button>
+	<button class="exercises" onclick="legRaises()">LEG-RAISES</button>
+	<button class="exercises" onclick="verticalLegRaises()">VERTICAL LEG-RAISES</button>
+	<button class="exercises" onclick="middleShoulderRod()">MIDDLE SHOULDER ROD</button>
+	<button class="exercises" onclick="middleShoulderDumble()">MIDDLE SHOULDER DUMBLE</button>
+	<button class="exercises" onclick="frontShoulderRod()">FRONT SHOULDER ROD</button>
+	<button class="exercises" onclick="frontShoulderDumble()">FRONT SHOULDER DUMBLE</button>
+	<button class="exercises" onclick="rareShoulderRod()">RARE SHOULDER ROD</button>
+	<button class="exercises" onclick="rareShoulderDumble()">RARE SHOULDER DUMBLE</button>
+	<button class="exercises" onclick="sideLiterals()">SIDE LITERALS</button>
+	<button class="exercises" onclick="frontLiterals()">FRONT LITERALS</button>
+	<button class="exercises" onclick="collarDumble()">COLLAR DUMBLE</button>
+	<button class="exercises" onclick="collarRod()">COLLAR ROD</button>
+	<button class="exercises" onclick="squats()">SQUATS</button>
+	<button class="exercises" onclick="frontSquats()">FRONT SQUATS</button>
+
+	<h3 class="footer">Made By: <span style="color: blue; text-decoration: underline;">Hasnain Ali</span></h3>
+
+	<script type="text/javascript" src="../js/home-script.js">
+		history.pushState(null, null, location.href);
+    	window.onpopstate = function () {
+        history.go(1);
+    	};
+	</script>
+</body>
+</html>

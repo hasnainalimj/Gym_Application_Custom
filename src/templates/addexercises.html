@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Exercises</title>
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<body background="../assets/addexercises.jpg">
+	<button class="new-buttons" onclick="backToHome()">Back to Home</button>
+	<div class="addexercises-container">
+		<h1 class="headingfive">ADD YOUR EXERCISES</h1>
+		<center>
+			<input type="text" id="txtexercise" placeholder="Add New Exercises.....">
+		</center>
+		<br>
+		<button class="btnaddinselect" onclick="addExerciseInSelect()">Add Exercise</button>
+		<br>
+		<br>
+		<hr>
+		<h1 class="headingfive">MANAGE YOUR EXERCISES</h1>
+		<center>
+			<select class="selectExercise" id="selectbox">
+				
+			</select>
+			<br>
+			<input type="number" id="txtexerciseraps" placeholder="Enter Exercise Raps.....">
+		</center>
+		<br>
+		<input type="button" class="addrest" id="checkedrestOne" onclick="showRest()" value="Take Rest" />
+		<br>
+		<input type="button" class="addrest" id="checkedrestTwo" onclick="hideRest()" value="Ignore Rest" />
+		<br>
+		<center>
+			<input type="number" id="txtrests" placeholder="Enter Rest Seconds.....">	
+		</center>
+		<br>
+		<button class="btnaddinselect" onclick="addingExercises()">ADDING</button>
+		<br>
+		<button class="btnaddinselect" onclick="gotoMyExercises()">DONE</button>
+	</div>
+	<script type="text/javascript" src="../js/custom-exercise.js"></script>
+	<script type="text/javascript">
+		history.pushState(null, null, location.href);
+        window.onpopstate = function () {
+        history.go(1);
+		};
+	</script>
+</body>
+</html>

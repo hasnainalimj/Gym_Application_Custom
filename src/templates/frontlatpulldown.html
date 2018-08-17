@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FRONT LAT-PULL DOWN</title>
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<body background="../assets/back8.jpg">
+
+	<div class="exercise-container">
+		<div class="exercise-title">
+			<h1 class="title">FRONT LAT-PULL DOWN</h1>
+		</div>
+		<h1 class="theraps">
+			RAPS : 
+			<span id="rapitetions"></span>
+		</h1>
+		<div class="raps-container">
+			<h1 id="raps"></h1>
+		</div>
+		<div class="btn-container" id="container">
+			<!--<input type="button" id="btnHome" class="btnHome" value="BACK TO HOME">-->
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		var counter = +prompt("Enter your Raps.....")+1;
+		if(isNaN(counter)){
+			alert("Please Enter Only Numeric Values.....");
+			counter = 13;
+		}
+		var view = document.getElementById('raps');
+		var rapCount = document.getElementById('rapitetions');
+		rapCount.innerHTML = counter-1;
+		var raps = setInterval(function(){
+			counter--;
+			view.innerHTML = counter;
+			if(counter == 0){
+				view.innerHTML = "DONE";
+				clearInterval(raps);
+				var container = document.getElementById('container');
+				var button = document.createElement('button');
+				button.innerHTML = "TAKE REST";
+				button.setAttribute('class','btnTakeRest');
+				button.setAttribute('onclick','takeRest()')
+				container.appendChild(button);
+				}
+		},1000);
+
+		function takeRest(){
+			window.location.href = "takerest.html";
+		}
+
+		history.pushState(null, null, location.href);
+    	window.onpopstate = function () {
+        history.go(1);
+    	};
+	</script>
+</body>
+</html>

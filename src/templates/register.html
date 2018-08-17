@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REGISTER-GYM APP</title>
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<body background="../assets/2.jpg">
+	<div class="regsiter-container">
+		<h1 class="headingTwo">REGISTER YOUR ACCOUNT</h1>
+		<center>
+		
+			<table>
+				<tr>
+					<td>
+						<p class="texts">
+							Username :
+						</p> 
+					</td>
+					<td>
+						<input type="text" id="txtUsername" class="fields" onfocusout="checkUsername()"/>
+					</td>
+					<td>
+						<span class="errors" id="txtUsernameError">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;</span>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<p class="texts">
+							Email :
+						</p> 
+					</td>
+					<td>
+						<input type="text" id="txtEmail" class="fields" onfocusout="checkEmail()"/>
+					</td>
+					<td>
+						<span class="errors" id="txtEmailError"></span>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<p class="texts">
+							Password :
+						</p> 
+					</td>
+					<td>
+						<input type="password" id="txtPassword" class="fields" onfocusout="checkPassword()" />
+					</td>
+					<td>
+						<span class="errors" id="txtPasswordError"></span>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<p class="texts">
+							Confirm Password :
+						</p> 
+					</td>
+					<td>
+						<input type="password" id="txtConfirmPassword" class="fields" oninput="checkConfirmPassword()"/>
+					</td>
+					<td>
+						<span class="errors" id="txtConfirmPasswordError"></span>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<p class="texts">
+							Gender :
+						</p>
+					</td>
+					<td>
+						<input type="radio" id="txtMale" name="gender" class="radios"/>
+						<label value="male" class="genders">Male</label>
+						<input type="radio" id="txtFemale" name="gender" class="radios"/>
+						<label value="female" class="genders">Female</label>
+					</td>
+					<td>
+						<span class="errors" id="txtGenderError"></span>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+					</td>
+					<td align="right">
+						<input type="submit" class="btnSubmit" id="btnRegSubmit" onclick="return onSubmit()">
+					</td>
+				</tr>
+			</table>
+		</center>
+		<a class="linking2" href="login.html">Already have Account</a>
+	</div>
+	<script type="text/javascript" src="../js/script.js">
+		history.pushState(null, null, location.href);
+    	window.onpopstate = function () {
+        history.go(1);
+    	};
+	</script>
+</body>
+</html>

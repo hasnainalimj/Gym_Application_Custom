@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOGIN-GYM APP</title>
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<body background="../assets/3.jpg">
+	<div class="login-container">
+		<h1 class="headingTwo">
+			LOGIN
+		</h1>
+		<center>
+			<table>
+				<tr>
+					<td>
+						<p class="texts">
+							Username :
+						</p> 
+					</td>
+					<td>
+						<input type="text" id="txtLoginUsername" class="fields"/>
+					</td>
+					<td>
+						<span class="errors" id="txtLoginUsernameError">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;</span>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<p class="texts">
+							Password :
+						</p> 
+					</td>
+					<td>
+						<input type="password" id="txtLoginPassword" class="fields"/>
+					</td>
+					<td>
+						<span class="errors" id="txtLoginPasswordError"></span>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+					</td>
+					<td align="right">
+						<input type="submit" value="Login" class="btnSubmit" onclick="return onLogin()">
+					</td>
+				</tr>
+			</table>
+		</center>
+		<a class="linking" href="register.html">Create a new Account</a>
+	</div>
+	<script type="text/javascript" src="../js/script.js">
+		history.pushState(null, null, location.href);
+    	window.onpopstate = function () {
+        history.go(1);
+    	};
+	</script>
+</body>
+</html>

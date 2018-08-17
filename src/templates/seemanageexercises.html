@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Exercises</title>
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<body background="../assets/addexercises.jpg">
+
+	<div class="myexercise-container">
+		<h1 class="headingfive">MY EXERCISES</h1>
+		<table border="1" align="center" id="main-table">
+			<tr>
+				<th>Exercise</th>
+				<th>Raps</th>
+				<th>Rest</th>
+			</tr>
+		</table>
+		<center>
+			<button class="new-buttons" onclick="gotoAddExercises()">Go To Add Exercises</button>
+			<button class="new-buttons" onclick="startMyExercise()">Start My Exercise</button>		
+		</center>
+	</div>
+
+	<script type="text/javascript">
+		//FETCH EXERCISES
+		function fetchExercises(){
+			var val = localStorage.getItem("exercise");
+			var all = JSON.parse(val);
+			var table = document.getElementById('main-table');
+			for(var i=0; i<all.length; i++){
+				var tr = document.createElement('tr');
+				table.appendChild(tr);
+					for(var j=0; j<all[i].length; j++){
+						var td = document.createElement('td');
+						var text = document.createTextNode(all[i][j]);
+						td.appendChild(text);
+						tr.appendChild(td);
+					}
+				}
+			}
+		
+		fetchExercises();
+
+		function gotoAddExercises(){
+			window.location.href = "addexercises.html";
+		}
+
+		function startMyExercise(){
+			alert("here we go........");
+		}
+
+		history.pushState(null, null, location.href);
+        window.onpopstate = function () {
+        history.go(1);
+		};
+
+	</script>
+</body>
+</html>
